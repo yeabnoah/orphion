@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
         hostname: "ik.imagekit.io",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "kxrkmfrzlrezupgccujw.supabase.co",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "example.com",
+        port: "",
+      },
     ],
   },
 };

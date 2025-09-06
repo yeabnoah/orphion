@@ -62,6 +62,11 @@ export type Account = Prisma.AccountModel
  */
 export type Verification = Prisma.VerificationModel
 /**
+ * Model Project
+ * 
+ */
+export type Project = Prisma.ProjectModel
+/**
  * Model Game
  * 
  */

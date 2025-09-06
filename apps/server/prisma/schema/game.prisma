@@ -3,6 +3,15 @@ enum GameTypes {
     GROUP
 }
 
+model Project {
+    Id          String   @id @default(cuid())
+    projectName String
+    description String?
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @updatedAt
+    games       Game[]
+}
+
 model Game {
     Id        String    @id @default(cuid())
     gameName  String
@@ -11,4 +20,6 @@ model Game {
     answer    String
     hint      String
     time      Int
+    projectId String?
+    project   Project?  @relation(fields: [projectId], references: [Id])
 }
