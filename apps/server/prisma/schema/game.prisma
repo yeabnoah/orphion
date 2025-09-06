@@ -1,0 +1,14 @@
+enum GameTypes {
+    INDIVIDUAL
+    GROUP
+}
+
+model Game {
+    Id        String    @id @default(cuid())
+    gameName  String
+    gameType  GameTypes
+    imageUrls String[]
+    answer    String
+    hint      String
+    time      Int
+}
